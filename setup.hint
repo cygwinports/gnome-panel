@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin ORBit2 atk gtk2-x11 libX11_6 libart_lgpl2 libbonobo2 libbonoboui2 libglade2 libgnome-desktop2 libgnome-menu2 libgnome2 libgnomeui2 libwnck1_18
+requires: cygwin ORBit2 atk gtk2-x11 libX11_6 libart_lgpl2 libbonobo2 libbonoboui2 libcairo2 libglade2 libgnome-desktop2 libgnome-menu2 libgnome2 libgnomeui2 libwnck1_18
 sdesc: "GNOME Desktop panel and standard applets"
 ldesc: "The package contains the GNOME panel which is the area on your
 desktop from which you can run applications and applets, and perform
