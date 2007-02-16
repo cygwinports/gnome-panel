@@ -13,11 +13,11 @@ List, the Window Selector, the Notification Area, the Clock and the
 infamous 'Wanda the Fish'.
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  ORBit2-2.14.3-1
-  atk-1.12.3-1
+  cygwin-1.5.24-2
+  ORBit2-2.14.5-1
+  atk-1.12.4-1
   gnome-menus-2.16.1-1
-  gtk2-x11-2.10.6-1
+  gtk2-x11-2.10.9-1
   libX11_6-1.1.1-1
   libbonobo2-2.16.0-1
   libbonoboui2-2.16.0-1
@@ -26,20 +26,20 @@ Runtime requirements:
   libgnome-desktop2-2.16.2-1
   libgnome2-2.16.0-1
   libgnomeui2-2.16.1-1
-  libwnck1_18-2.16.1-1
+  libwnck1_18-2.16.2-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
   gnome-doc-utils-0.8.0-1
-  intltool-0.35.0-1
-  libtool1.5-1.5.23a-1
+  intltool-0.35.4-1
+  libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
   scrollkeeper-0.3.14-2
@@ -54,15 +54,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-panel-2.16.2-X-src.tar.bz2
+  unpack gnome-panel-2.16.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-panel-2.16.2-X.cygport all
+  cygport ./gnome-panel-2.16.3-X.cygport all
 
 This will create:
-  /usr/src/gnome-panel-2.16.2-X-src.tar.bz2
-  /usr/src/gnome-panel-2.16.2-X.tar.bz2
+  /usr/src/gnome-panel-2.16.3-X-src.tar.bz2
+  /usr/src/gnome-panel-2.16.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -100,16 +100,16 @@ Files included in the binary package:
   /usr/lib/panel-2.0/notification-area-applet.exe
   /usr/lib/panel-2.0/wnck-applet.exe
   /usr/lib/pkgconfig/libpanelapplet-2.0.pc
-  /usr/share/doc/Cygwin/gnome-panel-2.16.2.README
-  /usr/share/doc/gnome-panel-2.16.2/AUTHORS
-  /usr/share/doc/gnome-panel-2.16.2/COPYING
-  /usr/share/doc/gnome-panel-2.16.2/COPYING-DOCS
-  /usr/share/doc/gnome-panel-2.16.2/COPYING.LIB
-  /usr/share/doc/gnome-panel-2.16.2/ChangeLog
-  /usr/share/doc/gnome-panel-2.16.2/HACKING
-  /usr/share/doc/gnome-panel-2.16.2/INSTALL
-  /usr/share/doc/gnome-panel-2.16.2/NEWS
-  /usr/share/doc/gnome-panel-2.16.2/README
+  /usr/share/doc/Cygwin/gnome-panel-2.16.3.README
+  /usr/share/doc/gnome-panel-2.16.3/AUTHORS
+  /usr/share/doc/gnome-panel-2.16.3/COPYING
+  /usr/share/doc/gnome-panel-2.16.3/COPYING-DOCS
+  /usr/share/doc/gnome-panel-2.16.3/COPYING.LIB
+  /usr/share/doc/gnome-panel-2.16.3/ChangeLog
+  /usr/share/doc/gnome-panel-2.16.3/HACKING
+  /usr/share/doc/gnome-panel-2.16.3/INSTALL
+  /usr/share/doc/gnome-panel-2.16.3/NEWS
+  /usr/share/doc/gnome-panel-2.16.3/README
   /usr/share/gnome-2.0/ui/GNOME_ClockApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_FishApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_NotificationAreaApplet.xml
@@ -505,6 +505,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.16.3-1 -----
+Version bump.
 
 ----- version 2.16.2-1 -----
 Version bump for GNOME 2.16.
