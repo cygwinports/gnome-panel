@@ -17,6 +17,7 @@ Runtime requirements:
   GConf2-2.18.0.1-1
   ORBit2-2.14.7-1
   atk-1.18.0-1
+  evolution-data-server-0.10.3.1-1
   gdk-pixbuf2-2.10.13-1
   glib2-2.12.12-2
   gnome-menus-2.18.0-1
@@ -513,6 +514,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.18.3-2 -----
+Added evolution-data-server support to the clock applet.
 
 ----- version 2.18.3-1 -----
 Version bump for GNOME 2.18.
