@@ -13,46 +13,47 @@ List, the Window Selector, the Notification Area, the Clock and the
 infamous 'Wanda the Fish'.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  GConf2-2.20.1-1
-  ORBit2-2.14.10-1
-  atk-1.20.0-1
-  evolution-data-server-1.12.2-1
-  gdk-pixbuf2-2.12.2-1
-  glib2-2.14.4-1
-  gnome-menus-2.20.2-1
-  gnome-vfs2-2.20.1-1
-  gtk2-x11-2.12.2-1
+  cygwin-1.5.25-11
+  GConf2-2.22.0-1
+  ORBit2-2.14.12-1
+  atk-1.22.0-1
+  evolution-data-server-2.22.2-1
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gnome-menus-2.22.2-1
+  gtk2-x11-2.12.9-1
   libX11_6-1.1.3-1
   libXau6-1.0.3-1
-  libbonobo2-2.20.1-1
-  libbonoboui2-2.20.0-1
-  libcairo2-1.4.12-1
+  libbonobo2-2.22.0-1
+  libbonoboui2-2.22.0-1
+  libcairo2-1.6.4-1
   libdbus-glib_1_2-0.74-1
   libglade2-2.6.2-1
-  libgnome-desktop2-2.20.2-1
-  libgnome2-2.20.1.1-1
-  libgnomeui2-2.20.1.1-1
+  libgnome-desktop2-2.22.2-1
+  libgnome2-2.22.0-1
+  libgnomeui2-2.22.1-1
+  libgweather-2.22.2-1
   libintl8-0.15-1
-  libwnck1_22-2.20.2-1
-  pango-1.18.3-1
+  librsvg2-2.22.2-1
+  libwnck1_22-2.22.2-1
+  pango-1.20.3-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.2-1
-  libtool1.5-1.5.23a-2
+  gettext-devel-0.15-1
+  gnome-common-2.20.0-2
+  gnome-doc-utils-0.12.2-1
+  intltool-0.37.1-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
-  rarian-0.6.0-1
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical website:
@@ -105,17 +106,16 @@ Files included in the binary package:
   /usr/lib/panel-2.0/notification-area-applet.exe
   /usr/lib/panel-2.0/wnck-applet.exe
   /usr/share/applications/gnome-panel.desktop
-  /usr/share/doc/Cygwin/gnome-panel-2.20.2.README
-  /usr/share/doc/gnome-panel-2.20.2/AUTHORS
-  /usr/share/doc/gnome-panel-2.20.2/COPYING
-  /usr/share/doc/gnome-panel-2.20.2/COPYING-DOCS
-  /usr/share/doc/gnome-panel-2.20.2/COPYING.LIB
-  /usr/share/doc/gnome-panel-2.20.2/ChangeLog
-  /usr/share/doc/gnome-panel-2.20.2/HACKING
-  /usr/share/doc/gnome-panel-2.20.2/INSTALL
-  /usr/share/doc/gnome-panel-2.20.2/MAINTAINERS
-  /usr/share/doc/gnome-panel-2.20.2/NEWS
-  /usr/share/doc/gnome-panel-2.20.2/README
+  /usr/share/doc/gnome-panel-2.22.2/AUTHORS
+  /usr/share/doc/gnome-panel-2.22.2/COPYING
+  /usr/share/doc/gnome-panel-2.22.2/COPYING-DOCS
+  /usr/share/doc/gnome-panel-2.22.2/COPYING.LIB
+  /usr/share/doc/gnome-panel-2.22.2/ChangeLog
+  /usr/share/doc/gnome-panel-2.22.2/HACKING
+  /usr/share/doc/gnome-panel-2.22.2/INSTALL
+  /usr/share/doc/gnome-panel-2.22.2/MAINTAINERS
+  /usr/share/doc/gnome-panel-2.22.2/NEWS
+  /usr/share/doc/gnome-panel-2.22.2/README
   /usr/share/gnome-2.0/ui/GNOME_ClockApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_FishApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_NotificationAreaApplet.xml
@@ -124,13 +124,24 @@ Files included in the binary package:
   /usr/share/gnome-2.0/ui/GNOME_WindowListApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_WindowMenuApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_WorkspaceSwitcherApplet.xml
+  /usr/share/gnome-panel/glade/clock.glade
   /usr/share/gnome-panel/glade/fish.glade
   /usr/share/gnome-panel/glade/panel-properties-dialog.glade
   /usr/share/gnome-panel/glade/panel-run-dialog.glade
   /usr/share/gnome-panel/glade/panel-test-applets.glade
-  /usr/share/gnome-panel/glade/timezone.glade
   /usr/share/gnome-panel/glade/window-list.glade
   /usr/share/gnome-panel/glade/workspace-switcher.glade
+  /usr/share/gnome-panel/pixmaps/clock-calendar-icon.png
+  /usr/share/gnome-panel/pixmaps/clock-face-large.svg
+  /usr/share/gnome-panel/pixmaps/clock-face-small-day.svg
+  /usr/share/gnome-panel/pixmaps/clock-face-small-evening.svg
+  /usr/share/gnome-panel/pixmaps/clock-face-small-morning.svg
+  /usr/share/gnome-panel/pixmaps/clock-face-small-night.svg
+  /usr/share/gnome-panel/pixmaps/clock-face-small.svg
+  /usr/share/gnome-panel/pixmaps/clock-map-location-current.png
+  /usr/share/gnome-panel/pixmaps/clock-map-location-hilight.png
+  /usr/share/gnome-panel/pixmaps/clock-map-location-marker.png
+  /usr/share/gnome-panel/pixmaps/clock-map.png
   /usr/share/gnome-panel/pixmaps/fishanim.png
   /usr/share/gnome-panel/pixmaps/footguy.png
   /usr/share/gnome-panel/pixmaps/gnome-gegl2-2.png
@@ -244,6 +255,7 @@ Files included in the binary package:
   /usr/share/gnome/help/fish/uk/legal.xml
   /usr/share/gnome/help/window-list/C/window-list.xml
   /usr/share/gnome/help/window-list/ca/window-list.xml
+  /usr/share/gnome/help/window-list/da/window-list.xml
   /usr/share/gnome/help/window-list/de/figures/window_list_applet.png
   /usr/share/gnome/help/window-list/de/figures/window_list_group.png
   /usr/share/gnome/help/window-list/de/figures/window_list_group_applet.png
@@ -271,6 +283,7 @@ Files included in the binary package:
   /usr/share/gnome/help/window-list/zh_TW/window-list.xml
   /usr/share/gnome/help/workspace-switcher/C/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/ca/workspace-switcher.xml
+  /usr/share/gnome/help/workspace-switcher/da/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/de/figures/workspace_switcher_applet.png
   /usr/share/gnome/help/workspace-switcher/de/figures/workspacelist_applet.png
   /usr/share/gnome/help/workspace-switcher/de/legal.xml
@@ -286,6 +299,7 @@ Files included in the binary package:
   /usr/share/gnome/help/workspace-switcher/nl/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/oc/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/pa/workspace-switcher.xml
+  /usr/share/gnome/help/workspace-switcher/pt_BR/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/ru/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/sv/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/uk/workspace-switcher.xml
@@ -342,6 +356,7 @@ Files included in the binary package:
   /usr/share/icons/hicolor/32x32/apps/gnome-panel-window-menu.png
   /usr/share/icons/hicolor/32x32/apps/gnome-panel-workspace-switcher.png
   /usr/share/icons/hicolor/32x32/apps/gnome-panel.png
+  /usr/share/icons/hicolor/48x48/apps/gnome-panel.png
   /usr/share/icons/hicolor/scalable/apps/gnome-panel-clock.svg
   /usr/share/icons/hicolor/scalable/apps/gnome-panel-drawer.svg
   /usr/share/icons/hicolor/scalable/apps/gnome-panel-fish.svg
@@ -356,6 +371,7 @@ Files included in the binary package:
   /usr/share/locale/af/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/am/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/as/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/az/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/be@latin/LC_MESSAGES/gnome-panel-2.0.mo
@@ -380,6 +396,7 @@ Files included in the binary package:
   /usr/share/locale/fa/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/fi/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/fr/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/fur/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ga/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/gl/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/gu/LC_MESSAGES/gnome-panel-2.0.mo
@@ -415,6 +432,7 @@ Files included in the binary package:
   /usr/share/locale/or/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/ps/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/pt/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ro/LC_MESSAGES/gnome-panel-2.0.mo
@@ -486,6 +504,7 @@ Files included in the binary package:
   /usr/share/omf/gnome-panel/workspace-switcher-zh_TW.omf
   /usr/share/omf/window-list/window-list-C.omf
   /usr/share/omf/window-list/window-list-ca.omf
+  /usr/share/omf/window-list/window-list-da.omf
   /usr/share/omf/window-list/window-list-de.omf
   /usr/share/omf/window-list/window-list-el.omf
   /usr/share/omf/window-list/window-list-es.omf
@@ -500,6 +519,7 @@ Files included in the binary package:
   /usr/share/omf/window-list/window-list-zh_CN.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-C.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-ca.omf
+  /usr/share/omf/workspace-switcher/workspace-switcher-da.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-de.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-el.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-es.omf
@@ -509,6 +529,7 @@ Files included in the binary package:
   /usr/share/omf/workspace-switcher/workspace-switcher-nl.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-oc.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-pa.omf
+  /usr/share/omf/workspace-switcher/workspace-switcher-pt_BR.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-ru.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-sv.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-uk.omf
@@ -546,6 +567,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.20.2-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 2.20.2-1 -----
 Version bump for GNOME 2.20.
