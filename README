@@ -13,47 +13,48 @@ List, the Window Selector, the Notification Area, the Clock and the
 infamous 'Wanda the Fish'.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  GConf2-2.22.0-1
-  ORBit2-2.14.12-1
-  atk-1.22.0-1
-  evolution-data-server-2.22.2-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.16.3-1
-  gnome-menus-2.22.2-1
-  gtk2-x11-2.12.9-1
-  libX11_6-1.1.3-1
-  libXau6-1.0.3-1
-  libbonobo2-2.22.0-1
-  libbonoboui2-2.22.0-1
-  libcairo2-1.6.4-1
-  libdbus-glib_1_2-0.74-1
-  libglade2-2.6.2-1
-  libgnome-desktop2-2.22.2-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
-  libgweather-2.22.2-1
-  libintl8-0.15-1
-  librsvg2-2.22.2-1
-  libwnck1_22-2.22.2-1
-  pango-1.20.3-1
+  cygwin-1.5.25-15
+  libatk1.0_0-1.24.0-1
+  libbonobo2_0-2.24.0-1
+  libbonoboui2_0-2.24.0-1
+  libcairo2-1.8.4-1
+  libdbus-glib_1_2-0.76-1
+  libecal1.2_7-2.24.2-1
+  libedataserver1.2_11-2.24.2-1
+  libedataserverui1.2_8-2.24.2-1
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.3-1
+  libgnome-desktop2_7-2.24.2-1
+  libgnome-menu2-2.24.2-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgtk2.0_0-2.14.5-1
+  libgweather1-2.24.2-1
+  libintl8-0.17-2
+  libORBit2_0-2.14.16-1
+  libpango1.0_0-1.22.3-1
+  librsvg2-2.22.3-1
+  libwnck1_22-2.24.2-1
+  libX11_6-1.1.5-1
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gettext-devel-0.15-1
-  gnome-common-2.20.0-2
-  gnome-doc-utils-0.12.2-1
-  intltool-0.37.1-1
-  libtool-2.2.2-2
+  gettext-devel-0.17-2
+  gnome-common-2.24.0-1
+  gnome-doc-utils-0.14.0-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
-  rarian-0.8.0-1
+  pkg-config-0.23a-2
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical website:
@@ -65,21 +66,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-panel-2.20.2-X-src.tar.bz2
+  unpack gnome-panel-2.24.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-panel-2.20.2-X.cygport all
+  cygport ./gnome-panel-2.24.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-panel-2.20.2-X-src.tar.bz2
-  /usr/src/gnome-panel-2.20.2-X.tar.bz2
-  /usr/src/gnome-panel-devel-2.20.2-X.tar.bz2
+  /usr/src/gnome-panel-2.24.2-X-src.tar.bz2
+  /usr/src/gnome-panel-2.24.2-X.tar.bz2
+  /usr/src/libpanel-applet2-devel-2.24.2-X.tar.bz2
+  /usr/src/libpanel-applet2_0-2.24.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+(gnome-applet)
   /etc/gconf/schemas/clock.schemas
   /etc/gconf/schemas/fish.schemas
   /etc/gconf/schemas/panel-compatibility.schemas
@@ -92,7 +95,6 @@ Files included in the binary package:
   /etc/gconf/schemas/workspace-switcher.schemas
   /etc/postinstall/gnome-panel.sh
   /etc/preremove/gnome-panel.sh
-  /usr/bin/cygpanel-applet-2-0.dll
   /usr/bin/gnome-desktop-item-edit.exe
   /usr/bin/gnome-panel.exe
   /usr/bin/panel-test-applets.exe
@@ -106,16 +108,16 @@ Files included in the binary package:
   /usr/lib/panel-2.0/notification-area-applet.exe
   /usr/lib/panel-2.0/wnck-applet.exe
   /usr/share/applications/gnome-panel.desktop
-  /usr/share/doc/gnome-panel-2.22.2/AUTHORS
-  /usr/share/doc/gnome-panel-2.22.2/COPYING
-  /usr/share/doc/gnome-panel-2.22.2/COPYING-DOCS
-  /usr/share/doc/gnome-panel-2.22.2/COPYING.LIB
-  /usr/share/doc/gnome-panel-2.22.2/ChangeLog
-  /usr/share/doc/gnome-panel-2.22.2/HACKING
-  /usr/share/doc/gnome-panel-2.22.2/INSTALL
-  /usr/share/doc/gnome-panel-2.22.2/MAINTAINERS
-  /usr/share/doc/gnome-panel-2.22.2/NEWS
-  /usr/share/doc/gnome-panel-2.22.2/README
+  /usr/share/doc/gnome-panel-2.24.2/AUTHORS
+  /usr/share/doc/gnome-panel-2.24.2/COPYING
+  /usr/share/doc/gnome-panel-2.24.2/COPYING-DOCS
+  /usr/share/doc/gnome-panel-2.24.2/COPYING.LIB
+  /usr/share/doc/gnome-panel-2.24.2/ChangeLog
+  /usr/share/doc/gnome-panel-2.24.2/HACKING
+  /usr/share/doc/gnome-panel-2.24.2/INSTALL
+  /usr/share/doc/gnome-panel-2.24.2/MAINTAINERS
+  /usr/share/doc/gnome-panel-2.24.2/NEWS
+  /usr/share/doc/gnome-panel-2.24.2/README
   /usr/share/gnome-2.0/ui/GNOME_ClockApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_FishApplet.xml
   /usr/share/gnome-2.0/ui/GNOME_NotificationAreaApplet.xml
@@ -154,6 +156,9 @@ Files included in the binary package:
   /usr/share/gnome/help/clock/C/clock.xml
   /usr/share/gnome/help/clock/C/figures/clock_applet.png
   /usr/share/gnome/help/clock/C/legal.xml
+  /usr/share/gnome/help/clock/ar/clock.xml
+  /usr/share/gnome/help/clock/ar/figures/clock_applet.png
+  /usr/share/gnome/help/clock/ar/legal.xml
   /usr/share/gnome/help/clock/ca/clock.xml
   /usr/share/gnome/help/clock/ca/figures/clock_applet.png
   /usr/share/gnome/help/clock/ca/legal.xml
@@ -166,6 +171,9 @@ Files included in the binary package:
   /usr/share/gnome/help/clock/es/clock.xml
   /usr/share/gnome/help/clock/es/figures/clock_applet.png
   /usr/share/gnome/help/clock/es/legal.xml
+  /usr/share/gnome/help/clock/fi/clock.xml
+  /usr/share/gnome/help/clock/fi/figures/clock_applet.png
+  /usr/share/gnome/help/clock/fi/legal.xml
   /usr/share/gnome/help/clock/fr/clock.xml
   /usr/share/gnome/help/clock/fr/figures/clock_applet.png
   /usr/share/gnome/help/clock/fr/legal.xml
@@ -199,6 +207,9 @@ Files included in the binary package:
   /usr/share/gnome/help/clock/sv/clock.xml
   /usr/share/gnome/help/clock/sv/figures/clock_applet.png
   /usr/share/gnome/help/clock/sv/legal.xml
+  /usr/share/gnome/help/clock/th/clock.xml
+  /usr/share/gnome/help/clock/th/figures/clock_applet.png
+  /usr/share/gnome/help/clock/th/legal.xml
   /usr/share/gnome/help/clock/uk/clock.xml
   /usr/share/gnome/help/clock/uk/figures/clock_applet.png
   /usr/share/gnome/help/clock/uk/legal.xml
@@ -229,12 +240,18 @@ Files included in the binary package:
   /usr/share/gnome/help/fish/ca/figures/fish_applet.png
   /usr/share/gnome/help/fish/ca/fish.xml
   /usr/share/gnome/help/fish/ca/legal.xml
+  /usr/share/gnome/help/fish/de/figures/fish_applet.png
+  /usr/share/gnome/help/fish/de/fish.xml
+  /usr/share/gnome/help/fish/de/legal.xml
   /usr/share/gnome/help/fish/el/figures/fish_applet.png
   /usr/share/gnome/help/fish/el/fish.xml
   /usr/share/gnome/help/fish/el/legal.xml
   /usr/share/gnome/help/fish/es/figures/fish_applet.png
   /usr/share/gnome/help/fish/es/fish.xml
   /usr/share/gnome/help/fish/es/legal.xml
+  /usr/share/gnome/help/fish/fi/figures/fish_applet.png
+  /usr/share/gnome/help/fish/fi/fish.xml
+  /usr/share/gnome/help/fish/fi/legal.xml
   /usr/share/gnome/help/fish/fr/figures/fish_applet.png
   /usr/share/gnome/help/fish/fr/fish.xml
   /usr/share/gnome/help/fish/fr/legal.xml
@@ -247,13 +264,20 @@ Files included in the binary package:
   /usr/share/gnome/help/fish/oc/figures/fish_applet.png
   /usr/share/gnome/help/fish/oc/fish.xml
   /usr/share/gnome/help/fish/oc/legal.xml
+  /usr/share/gnome/help/fish/ru/figures/fish_applet.png
+  /usr/share/gnome/help/fish/ru/fish.xml
+  /usr/share/gnome/help/fish/ru/legal.xml
   /usr/share/gnome/help/fish/sv/figures/fish_applet.png
   /usr/share/gnome/help/fish/sv/fish.xml
   /usr/share/gnome/help/fish/sv/legal.xml
+  /usr/share/gnome/help/fish/th/figures/fish_applet.png
+  /usr/share/gnome/help/fish/th/fish.xml
+  /usr/share/gnome/help/fish/th/legal.xml
   /usr/share/gnome/help/fish/uk/figures/fish_applet.png
   /usr/share/gnome/help/fish/uk/fish.xml
   /usr/share/gnome/help/fish/uk/legal.xml
   /usr/share/gnome/help/window-list/C/window-list.xml
+  /usr/share/gnome/help/window-list/ar/window-list.xml
   /usr/share/gnome/help/window-list/ca/window-list.xml
   /usr/share/gnome/help/window-list/da/window-list.xml
   /usr/share/gnome/help/window-list/de/figures/window_list_applet.png
@@ -263,6 +287,7 @@ Files included in the binary package:
   /usr/share/gnome/help/window-list/de/window-list.xml
   /usr/share/gnome/help/window-list/el/window-list.xml
   /usr/share/gnome/help/window-list/es/window-list.xml
+  /usr/share/gnome/help/window-list/fi/window-list.xml
   /usr/share/gnome/help/window-list/fr/window-list.xml
   /usr/share/gnome/help/window-list/it/window-list.xml
   /usr/share/gnome/help/window-list/ja/figures/window_list_applet.png
@@ -282,6 +307,7 @@ Files included in the binary package:
   /usr/share/gnome/help/window-list/zh_TW/legal.xml
   /usr/share/gnome/help/window-list/zh_TW/window-list.xml
   /usr/share/gnome/help/workspace-switcher/C/workspace-switcher.xml
+  /usr/share/gnome/help/workspace-switcher/ar/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/ca/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/da/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/de/figures/workspace_switcher_applet.png
@@ -290,6 +316,7 @@ Files included in the binary package:
   /usr/share/gnome/help/workspace-switcher/de/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/el/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/es/workspace-switcher.xml
+  /usr/share/gnome/help/workspace-switcher/fi/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/fr/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/it/workspace-switcher.xml
   /usr/share/gnome/help/workspace-switcher/ja/figures/workspace_switcher_applet.png
@@ -368,10 +395,12 @@ Files included in the binary package:
   /usr/share/icons/hicolor/scalable/apps/gnome-panel-window-menu.svg
   /usr/share/icons/hicolor/scalable/apps/gnome-panel-workspace-switcher.svg
   /usr/share/icons/hicolor/scalable/apps/gnome-panel.svg
+  /usr/share/idl/gnome-panel-2.0/GNOME_Panel.idl
   /usr/share/locale/af/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/am/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/as/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/ast/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/az/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/be@latin/LC_MESSAGES/gnome-panel-2.0.mo
@@ -381,6 +410,7 @@ Files included in the binary package:
   /usr/share/locale/br/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/bs/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ca/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/ca@valencia/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/cs/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/cy/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/da/LC_MESSAGES/gnome-panel-2.0.mo
@@ -406,6 +436,7 @@ Files included in the binary package:
   /usr/share/locale/hu/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/hy/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/id/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/is/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-panel-2.0.mo
@@ -413,9 +444,11 @@ Files included in the binary package:
   /usr/share/locale/ko/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ku/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ky/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/la/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/li/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/lt/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/lv/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/mai/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/mg/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/mi/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/mk/LC_MESSAGES/gnome-panel-2.0.mo
@@ -443,8 +476,8 @@ Files included in the binary package:
   /usr/share/locale/sl/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/sq/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/sr/LC_MESSAGES/gnome-panel-2.0.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/sr@ije/LC_MESSAGES/gnome-panel-2.0.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/sv/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/ta/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/locale/te/LC_MESSAGES/gnome-panel-2.0.mo
@@ -463,10 +496,12 @@ Files included in the binary package:
   /usr/share/locale/zu/LC_MESSAGES/gnome-panel-2.0.mo
   /usr/share/man/man1/gnome-panel.1.gz
   /usr/share/omf/clock/clock-C.omf
+  /usr/share/omf/clock/clock-ar.omf
   /usr/share/omf/clock/clock-ca.omf
   /usr/share/omf/clock/clock-de.omf
   /usr/share/omf/clock/clock-el.omf
   /usr/share/omf/clock/clock-es.omf
+  /usr/share/omf/clock/clock-fi.omf
   /usr/share/omf/clock/clock-fr.omf
   /usr/share/omf/clock/clock-it.omf
   /usr/share/omf/clock/clock-ja.omf
@@ -478,18 +513,23 @@ Files included in the binary package:
   /usr/share/omf/clock/clock-ru.omf
   /usr/share/omf/clock/clock-sr.omf
   /usr/share/omf/clock/clock-sv.omf
+  /usr/share/omf/clock/clock-th.omf
   /usr/share/omf/clock/clock-uk.omf
   /usr/share/omf/clock/clock-zh_CN.omf
   /usr/share/omf/clock/clock-zh_TW.omf
   /usr/share/omf/fish/fish-C.omf
   /usr/share/omf/fish/fish-ca.omf
+  /usr/share/omf/fish/fish-de.omf
   /usr/share/omf/fish/fish-el.omf
   /usr/share/omf/fish/fish-es.omf
+  /usr/share/omf/fish/fish-fi.omf
   /usr/share/omf/fish/fish-fr.omf
   /usr/share/omf/fish/fish-it.omf
   /usr/share/omf/fish/fish-ko.omf
   /usr/share/omf/fish/fish-oc.omf
+  /usr/share/omf/fish/fish-ru.omf
   /usr/share/omf/fish/fish-sv.omf
+  /usr/share/omf/fish/fish-th.omf
   /usr/share/omf/fish/fish-uk.omf
   /usr/share/omf/gnome-panel/fish-applet-2-de.omf
   /usr/share/omf/gnome-panel/fish-applet-2-ja.omf
@@ -503,11 +543,13 @@ Files included in the binary package:
   /usr/share/omf/gnome-panel/workspace-switcher-zh_CN.omf
   /usr/share/omf/gnome-panel/workspace-switcher-zh_TW.omf
   /usr/share/omf/window-list/window-list-C.omf
+  /usr/share/omf/window-list/window-list-ar.omf
   /usr/share/omf/window-list/window-list-ca.omf
   /usr/share/omf/window-list/window-list-da.omf
   /usr/share/omf/window-list/window-list-de.omf
   /usr/share/omf/window-list/window-list-el.omf
   /usr/share/omf/window-list/window-list-es.omf
+  /usr/share/omf/window-list/window-list-fi.omf
   /usr/share/omf/window-list/window-list-fr.omf
   /usr/share/omf/window-list/window-list-it.omf
   /usr/share/omf/window-list/window-list-ko.omf
@@ -518,11 +560,13 @@ Files included in the binary package:
   /usr/share/omf/window-list/window-list-uk.omf
   /usr/share/omf/window-list/window-list-zh_CN.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-C.omf
+  /usr/share/omf/workspace-switcher/workspace-switcher-ar.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-ca.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-da.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-de.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-el.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-es.omf
+  /usr/share/omf/workspace-switcher/workspace-switcher-fi.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-fr.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-it.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-ko.omf
@@ -535,7 +579,10 @@ Files included in the binary package:
   /usr/share/omf/workspace-switcher/workspace-switcher-uk.omf
   /usr/share/omf/workspace-switcher/workspace-switcher-vi.omf
 
-(gnome-panel-devel)
+(libpanel-applet2_0)
+  /usr/bin/cygpanel-applet-2-0.dll
+
+(libpanel-applet2-devel)
   /usr/include/panel-2.0/GNOME_Panel.h
   /usr/include/panel-2.0/panel-applet-enums.h
   /usr/include/panel-2.0/panel-applet-gconf.h
@@ -568,8 +615,11 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.20.2-1 -----
-Version bump for GNOME 2.20.
+----- version 2.24.2-1 -----
+Version bump for GNOME 2.24.
+
+----- version 2.22.2-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.2-1 -----
 Version bump for GNOME 2.20.
