@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin GConf2 libatk1.0_0 libbonobo2_0 libbonoboui2_0 libcairo2 libdbus-glib_1_2 libecal1.2_7 libedataserver1.2_11 libedataserverui1.2_8 libgconf2_4 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgnome2_0 libgnome-desktop2_7 libgnome-menu2 libgnomeui2_0 libgtk2.0_0 libgweather1 libintl8 libORBit2 libpanel-applet2_0 libpango1.0_0 librsvg2_2 libwnck1_22 libX11_6
+requires: cygwin GConf2 libatk1.0_0 libbonobo2_0 libbonoboui2_0 libcairo2 libdbus-glib_1_2 libecal1.2_7 libedataserver1.2_11 libedataserverui1.2_8 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglade2.0_0 libglib2.0_0 libgnome2_0 libgnome-desktop2_7 libgnome-menu2 libgnomeui2_0 libgtk2.0_0 libgweather1 libical0 libintl8 libORBit2 libpanel-applet2_0 libpango1.0_0 librsvg2_2 libwnck1_22 libX11_6
 sdesc: "GNOME Desktop panel and standard applets"
 ldesc: "The package contains the GNOME panel which is the area on your
 desktop from which you can run applications and applets, and perform
