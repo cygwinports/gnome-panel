@@ -13,50 +13,50 @@ List, the Window Selector, the Notification Area, the Clock and the
 infamous 'Wanda the Fish'.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   libatk1.0_0-1.26.0-1
   libbonobo2_0-2.24.1-1
   libbonoboui2_0-2.24.1-1
   libcairo2-1.8.6-10
   libdbus-glib_1_2-0.80-10
-  libecal1.2_7-2.26.1.1-1
-  libedataserver1.2_11-2.26.1.1-1
-  libedataserverui1.2_8-2.26.1.1-1
+  libecal1.2_7-2.26.2-1
+  libedataserver1.2_11-2.26.2-1
+  libedataserverui1.2_8-2.26.2-1
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.1-1
+  libgconf2_4-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.2-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.1-1
-  libgnome-desktop2_11-2.26.0-1
-  libgnome-menu2-2.26.0-1
+  libglib2.0_0-2.20.3-1
+  libgnome-desktop2_11-2.26.2-1
+  libgnome-menu2-2.26.1-1
   libgnome2_0-2.26.0-1
   libgnomeui2_0-2.24.1-1
-  libgtk2.0_0-2.16.1-1
-  libgweather1-2.26.0-1
+  libgtk2.0_0-2.16.2-1
+  libgweather1-2.26.1-1
   libical0-0.43-10
   libintl8-0.17-10
   libORBit2_0-2.14.17-1
-  libpango1.0_0-1.24.0-1
+  libpango1.0_0-1.24.2-1
   librsvg2_2-2.26.0-1
-  libwnck1_22-2.26.0-1
+  libwnck1_22-2.26.1-1
   libX11_6-1.2-10
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gettext-devel-0.17-10
-  gnome-common-2.26.0-1
-  gnome-doc-utils-0.16.0-1
+  gnome-common-2.26.0-2
+  gnome-doc-utils-0.16.1-2
   intltool-0.40.6-1
   libtool-2.2.7a-12
   make-3.81-2
   pkg-config-0.23b-10
-  rarian-0.8.1-10
+  rarian-0.8.1-11
   sed-4.1.5-2
 
 Canonical website:
@@ -68,17 +68,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-panel-2.26.1-X-src.tar.bz2
+  unpack gnome-panel-2.26.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-panel-2.26.1-X.cygport all
+  cygport ./gnome-panel-2.26.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-panel-2.26.1-X-src.tar.bz2
-  /usr/src/gnome-panel-2.26.1-X.tar.bz2
-  /usr/src/libpanel-applet2-devel-2.26.1-X.tar.bz2
-  /usr/src/libpanel-applet2_0-2.26.1-X.tar.bz2
+  /usr/src/gnome-panel-2.26.2-X-src.tar.bz2
+  /usr/src/gnome-panel-2.26.2-X.tar.bz2
+  /usr/src/libpanel-applet2-devel-2.26.2-X.tar.bz2
+  /usr/src/libpanel-applet2_0-2.26.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -641,6 +641,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.26.2-1 -----
+Version bump.
 
 ----- version 2.26.1-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
