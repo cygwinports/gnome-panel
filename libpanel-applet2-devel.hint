@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libpanel-applet2_0 libbonobo2-devel libbonoboui2-devel libcairo-devel libgconf2-devel libglib2.0-devel libgtk2.0-devel gettext libORBit2-devel libX11-devel
+requires: libpanel-applet2_0 libbonobo2-devel libbonoboui2-devel libcairo-devel libgconf2-devel libglib2.0-devel libgtk2.0-devel gettext libORBit2-devel libX11-devel
 external-source: gnome-panel
 sdesc: "GNOME Desktop panel library (development)"
 ldesc: "The package contains the GNOME panel which is the area on your
