@@ -1,0 +1,38 @@
+--- origsrc/gnome-panel-3.0.0.1/applets/clock/Makefile.am	2011-01-31 17:50:19.000000000 -0600
++++ src/gnome-panel-3.0.0.1/applets/clock/Makefile.am	2011-05-13 14:21:58.270487000 -0500
+@@ -59,10 +59,10 @@ CLOCK_CPPFLAGS =						\
+ 	-DGWEATHER_I_KNOW_THIS_IS_UNSTABLE
+ 
+ CLOCK_LDADD =						\
++	libsystem-timezone.la				\
+ 	../../libpanel-applet/libpanel-applet-4.la	\
+ 	$(CLOCK_LIBS)					\
+ 	$(LIBPANEL_APPLET_LIBS)				\
+-	libsystem-timezone.la				\
+ 	-lm
+ 
+ test_system_timezone_SOURCES = 	\
+--- origsrc/gnome-panel-3.0.0.1/applets/notification_area/Makefile.am	2011-02-22 17:33:16.000000000 -0600
++++ src/gnome-panel-3.0.0.1/applets/notification_area/Makefile.am	2011-05-13 14:21:26.580674500 -0500
+@@ -29,17 +29,17 @@ libtray_la_SOURCES =		\
+ NOTIFICATION_AREA_SOURCES = main.c main.h
+ 
+ NOTIFICATION_AREA_LDADD =				\
++	libtray.la					\
+ 	../../libpanel-applet/libpanel-applet-4.la	\
+ 	$(X_LIBS)					\
+ 	$(NOTIFICATION_AREA_LIBS)			\
+-	$(LIBPANEL_APPLET_LIBS)				\
+-	libtray.la
++	$(LIBPANEL_APPLET_LIBS)
+ 
+ testtray_SOURCES = testtray.c
+ testtray_LDADD =			\
++	libtray.la			\
+ 	$(X_LIBS)			\
+-	$(NOTIFICATION_AREA_LIBS)	\
+-	libtray.la
++	$(NOTIFICATION_AREA_LIBS)
+ 
+ if NOTIFICATION_AREA_INPROCESS
+ APPLET_IN_PROCESS = true
