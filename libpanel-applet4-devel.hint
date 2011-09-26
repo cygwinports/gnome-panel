@@ -1,5 +1,5 @@
 category: Gnome
-requires: gnome-panel libcairo-devel libgconf2-devel libglib2.0-devel libgtk3-devel libX11-devel
+requires: libpanel-applet4_0 libcairo-devel libgconf2-devel libglib2.0-devel libgtk3-devel libX11-devel
 external-source: gnome-panel
 sdesc: "GNOME Desktop panel (development)"
 ldesc: "The package contains the GNOME panel which is the area on your
