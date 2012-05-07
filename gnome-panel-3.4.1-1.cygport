@@ -2,7 +2,8 @@ inherit gnome2
 
 DESCRIPTION="GNOME Desktop panel and applets"
 
-PATCH_URI="3.0.0.1-as-needed.patch"
+PATCH_URI="3.0.0.1-as-needed.patch
+           3.4.1-no-polkit.patch"
 
 PKG_NAMES="${PN} libpanel-applet4_0 libpanel-applet4-devel"
 gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/*.exe usr/lib/gir* usr/lib/${PN}/ usr/share/"
@@ -14,3 +15,5 @@ CYGCONF_ARGS="
 	--libexecdir=/usr/lib/${PN}/4.0
 	--disable-network-manager
 "
+
+KEEP_LA_FILES="none"
