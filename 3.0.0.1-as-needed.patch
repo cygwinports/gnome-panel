@@ -1,12 +1,13 @@
 --- origsrc/gnome-panel-3.0.0.1/applets/clock/Makefile.am	2011-01-31 17:50:19.000000000 -0600
 +++ src/gnome-panel-3.0.0.1/applets/clock/Makefile.am	2011-05-13 14:21:58.270487000 -0500
-@@ -59,10 +59,10 @@ CLOCK_CPPFLAGS =						\
+@@ -59,11 +59,11 @@ CLOCK_CPPFLAGS =						\
  	-DGWEATHER_I_KNOW_THIS_IS_UNSTABLE
  
  CLOCK_LDADD =						\
 +	libsystem-timezone.la				\
  	../../libpanel-applet/libpanel-applet-4.la	\
  	$(CLOCK_LIBS)					\
+ 	$(CLOCK_EDS_LIBS)					\
  	$(LIBPANEL_APPLET_LIBS)				\
 -	libsystem-timezone.la				\
  	-lm
