@@ -1,8 +1,9 @@
-inherit gnome2
+GIT_REV=aff1d6d
+inherit gnome2 git
 
 NAME="gnome-panel"
-VERSION=3.6.2
-RELEASE=2
+VERSION=3.7.0
+RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop panel and standard applets"
 DESCRIPTION="The package contains the GNOME panel which is the area on your
@@ -14,13 +15,6 @@ Switcher, the Window List, the Window Selector, the Notification Area, the
 Clock and the infamous 'Wanda the Fish'."
 
 PATCH_URI="
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-fix-animation.patch
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-gweather-include.patch
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-fix-black.patch
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-drop-commandline.patch
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-resurrect-function.patch
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-rename-function.patch
-	mirror://portage/gnome-base/gnome-panel/files/gnome-panel-3.6.2-generic-marshaller.patch
 	3.0.0.1-as-needed.patch
 	3.4.1-no-polkit.patch
 "
