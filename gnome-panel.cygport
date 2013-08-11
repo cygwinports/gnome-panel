@@ -17,6 +17,7 @@ Clock and the infamous 'Wanda the Fish'."
 PATCH_URI="
 	3.0.0.1-as-needed.patch
 	3.4.1-no-polkit.patch
+	3.7.0-gnome-flashback.patch
 "
 
 PKG_NAMES="${NAME} libpanel-applet4_0 libpanel-applet4-devel"
