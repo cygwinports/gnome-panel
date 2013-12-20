@@ -1,8 +1,7 @@
-GIT_REV=aff1d6d
-inherit gnome2 git
+inherit gnome2
 
 NAME="gnome-panel"
-VERSION=3.7.0
+VERSION=3.8.0
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop panel and standard applets"
@@ -21,7 +20,7 @@ PATCH_URI="
 "
 
 PKG_NAMES="${NAME} libpanel-applet4_0 libpanel-applet4-devel"
-gnome_panel_REQUIRES="alacarte"
+gnome_panel_REQUIRES="alacarte gnome-settings-daemon metacity notification-daemon"
 gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/*.exe usr/lib/gir* usr/libexec/ usr/share/"
 libpanel_applet4_0_CONTENTS="usr/bin/cygpanel-applet-4-0.dll"
 libpanel_applet4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/
