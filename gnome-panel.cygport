@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gnome-panel"
 VERSION=3.8.0
-RELEASE=1
+RELEASE=2
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop panel and standard applets"
 DESCRIPTION="The package contains the GNOME panel which is the area on your
@@ -19,12 +19,13 @@ PATCH_URI="
 	3.7.0-gnome-flashback.patch
 "
 
-PKG_NAMES="${NAME} libpanel-applet4_0 libpanel-applet4-devel"
+PKG_NAMES="${NAME} libpanel-applet4_0 libpanel-applet4-devel libpanel-applet4-doc"
 gnome_panel_REQUIRES="alacarte gnome-settings-daemon metacity notification-daemon"
 gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/*.exe usr/lib/gir* usr/libexec/ usr/share/"
 libpanel_applet4_0_CONTENTS="usr/bin/cygpanel-applet-4-0.dll"
-libpanel_applet4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/
-                                 usr/share/gtk-doc/"
+libpanel_applet4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libpanel_applet4_doc_CATEGORY="Doc"
+libpanel_applet4_doc_CONTENTS="usr/share/gtk-doc/"
 
 CYGCONF_ARGS="
 	--disable-network-manager
