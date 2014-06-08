@@ -27,6 +27,8 @@ libpanel_applet4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 libpanel_applet4_doc_CATEGORY="Doc"
 libpanel_applet4_doc_CONTENTS="usr/share/gtk-doc/"
 
+# libexecdir: avoid collision with mate-panel applets
 CYGCONF_ARGS="
+	--libexecdir=/usr/libexec/gnome-panel
 	--disable-network-manager
 "
