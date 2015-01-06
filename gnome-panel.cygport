@@ -1,8 +1,8 @@
 inherit gnome2
 
 NAME="gnome-panel"
-VERSION=3.8.0
-RELEASE=2
+VERSION=3.14.0
+RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop panel and standard applets"
 DESCRIPTION="The package contains the GNOME panel which is the area on your
@@ -14,18 +14,18 @@ Switcher, the Window List, the Window Selector, the Notification Area, the
 Clock and the infamous 'Wanda the Fish'."
 
 PATCH_URI="
-	3.0.0.1-as-needed.patch
-	3.4.1-no-polkit.patch
-	3.7.0-gnome-flashback.patch
+	3.14.0-as-needed.patch
+	3.14.0-no-polkit.patch
 "
 
-PKG_NAMES="${NAME} libpanel-applet4_0 libpanel-applet4-devel libpanel-applet4-doc"
-gnome_panel_REQUIRES="alacarte gnome-settings-daemon metacity notification-daemon"
-gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/*.exe usr/lib/gir* usr/libexec/ usr/share/"
-libpanel_applet4_0_CONTENTS="usr/bin/cygpanel-applet-4-0.dll"
-libpanel_applet4_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
-libpanel_applet4_doc_CATEGORY="Doc"
-libpanel_applet4_doc_CONTENTS="usr/share/gtk-doc/"
+PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc"
+gnome_panel_REQUIRES="alacarte"
+gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/gir* usr/libexec/ usr/share/"
+gnome_panel_devel_OBSOLETES="libpanel-applet4-devel"
+gnome_panel_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+gnome_panel_doc_CATEGORY="Doc"
+gnome_panel_doc_OBSOLETES="libpanel-applet4-doc"
+gnome_panel_doc_CONTENTS="usr/share/gtk-doc/"
 
 # libexecdir: avoid collision with mate-panel applets
 CYGCONF_ARGS="
