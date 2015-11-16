@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-panel"
-VERSION=3.14.0
+VERSION=3.18.1
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop panel and standard applets"
@@ -14,13 +14,13 @@ Switcher, the Window List, the Window Selector, the Notification Area, the
 Clock and the infamous 'Wanda the Fish'."
 
 PATCH_URI="
-	3.14.0-as-needed.patch
+	3.18.1-cygwin-applets.patch
 	3.14.0-no-polkit.patch
 "
 
-PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc"
+PKG_NAMES="${NAME} ${NAME}-devel" # ${NAME}-doc"
 gnome_panel_REQUIRES="alacarte"
-gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/gir* usr/libexec/ usr/share/"
+gnome_panel_CONTENTS="--exclude=gtk-doc etc/ usr/bin/ usr/lib/gir* usr/lib/gnome-panel/ usr/share/"
 gnome_panel_devel_OBSOLETES="libpanel-applet4-devel"
 gnome_panel_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 gnome_panel_doc_CATEGORY="Doc"
@@ -31,4 +31,5 @@ gnome_panel_doc_CONTENTS="usr/share/gtk-doc/"
 CYGCONF_ARGS="
 	--libexecdir=/usr/libexec/gnome-panel
 	--disable-network-manager
+	--disable-gtk-doc
 "
