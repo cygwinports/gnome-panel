@@ -13,10 +13,10 @@
  	$(AM_LDFLAGS) \
  	$(NULL)
  
--APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/libclock-applet.so
-+APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/cygclock-applet.dll
+-APPLET_LOCATION   = $(pkglibdir)/libclock-applet.so
++APPLET_LOCATION   = $(pkglibdir)/cygclock-applet.dll
  
- clock_appletlibdir = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)
+ clock_appletlibdir = $(pkglibdir)
  clock_appletlib_LTLIBRARIES = libclock-applet.la
 --- origsrc/gnome-panel-3.18.1/applets/fish/Makefile.am	2015-09-27 09:12:39.000000000 -0500
 +++ src/gnome-panel-3.18.1/applets/fish/Makefile.am	2015-11-15 20:28:11.483027600 -0600
@@ -30,10 +30,10 @@
  	$(AM_LDFLAGS) \
  	$(NULL)
  
--APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/libfish-applet.so
-+APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/cygfish-applet.dll
+-APPLET_LOCATION   = $(pkglibdir)/libfish-applet.so
++APPLET_LOCATION   = $(pkglibdir)/cygfish-applet.dll
  
- fish_applet_libdir = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)
+ fish_applet_libdir = $(pkglibdir)
  fish_applet_lib_LTLIBRARIES = libfish-applet.la
 --- origsrc/gnome-panel-3.18.1/applets/notification_area/Makefile.am	2015-09-27 09:13:03.000000000 -0500
 +++ src/gnome-panel-3.18.1/applets/notification_area/Makefile.am	2015-11-15 20:28:25.685048400 -0600
@@ -50,10 +50,10 @@
  	$(AM_LDFLAGS) \
  	$(NULL)
  
--APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/libnotification-area-applet.so
-+APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/cygnotification-area-applet.dll
+-APPLET_LOCATION   = $(pkglibdir)/libnotification-area-applet.so
++APPLET_LOCATION   = $(pkglibdir)/cygnotification-area-applet.dll
  
- notification_area_appletlibdir = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)
+ notification_area_appletlibdir = $(pkglibdir)
  notification_area_appletlib_LTLIBRARIES = libnotification-area-applet.la
 --- origsrc/gnome-panel-3.18.1/applets/wncklet/Makefile.am	2015-09-27 09:13:17.000000000 -0500
 +++ src/gnome-panel-3.18.1/applets/wncklet/Makefile.am	2015-11-15 20:28:35.185061500 -0600
@@ -67,10 +67,10 @@
  	$(AM_LDFLAGS) \
  	$(NULL)
  
--APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/libwnck-applet.so
-+APPLET_LOCATION   = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)/cygwnck-applet.dll
+-APPLET_LOCATION   = $(pkglibdir)/libwnck-applet.so
++APPLET_LOCATION   = $(pkglibdir)/cygwnck-applet.dll
  
- wnck_appletlibdir = $(pkglibdir)/$(LIBPANEL_APPLET_API_VERSION)
+ wnck_appletlibdir = $(pkglibdir)
  wnck_appletlib_LTLIBRARIES = libwnck-applet.la
 --- origsrc/gnome-panel-3.18.1/libpanel-applet/panel-applet.c	2015-10-12 16:30:39.000000000 -0500
 +++ src/gnome-panel-3.18.1/libpanel-applet/panel-applet.c	2015-11-15 20:22:31.486832400 -0600
