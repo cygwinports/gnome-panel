@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-panel"
-VERSION=3.22.0
+VERSION=3.24.1
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop panel and standard applets"
@@ -14,8 +14,8 @@ Switcher, the Window List, the Window Selector, the Notification Area, the
 Clock and the infamous 'Wanda the Fish'."
 
 PATCH_URI="
-	3.18.1-cygwin-applets.patch
-	3.14.0-no-polkit.patch
+	3.24.1-no-undefined.patch
+	3.24.1-no-polkit.patch
 	3.22.0-no-gdm.patch
 "
 

@@ -1,0 +1,47 @@
+--- origsrc/gnome-panel-3.24.1/configure.ac	2017-03-28 12:02:35.000000000 -0500
++++ src/gnome-panel-3.24.1/configure.ac	2017-09-04 21:33:48.345967400 -0500
+@@ -187,7 +187,6 @@ PKG_CHECK_MODULES([CLOCK], [
+   gtk+-3.0 >= $GTK_REQUIRED
+   gweather-3.0 >= $GWEATHER_REQUIRED
+   pango >= $PANGO_REQUIRED
+-  polkit-gobject-1
+ ])
+ 
+ # Check whether to enable e-d-s support for clock applet
+--- origsrc/gnome-panel-3.24.1/modules/external/clock/set-timezone.c	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/external/clock/set-timezone.c	2017-09-04 21:26:32.650550400 -0500
+@@ -22,7 +22,9 @@
+ #endif
+ 
+ #include <gio/gio.h>
++#ifndef __CYGWIN__
+ #include <polkit/polkit.h>
++#endif
+ 
+ #include "set-timezone.h"
+ 
+@@ -58,6 +60,7 @@ get_system_bus (GError **error)
+   return system;
+ }
+ 
++#ifndef __CYGWIN__
+ static int
+ can_set (Cache *cache, const gchar *method_name)
+ {
+@@ -102,11 +105,16 @@ can_set (Cache *cache, const gchar *meth
+ 
+   return cache->value;
+ }
++#endif
+ 
+ gint
+ can_set_system_timezone (void)
+ {
++#ifndef __CYGWIN__
+   return can_set (&can_set_timezone_cache, "CanSetTimezone");
++#else
++  return FALSE;
++#endif
+ }
+ 
+ gboolean

@@ -1,0 +1,84 @@
+--- origsrc/gnome-panel-3.24.1/libgnome-panel/Makefile.am	2017-03-23 06:27:31.000000000 -0500
++++ src/gnome-panel-3.24.1/libgnome-panel/Makefile.am	2017-09-05 02:22:11.199594500 -0500
+@@ -1,6 +1,6 @@
+ NULL =
+ 
+-noinst_LTLIBRARIES = libgnome-panel.la
++lib_LTLIBRARIES = libgnome-panel.la
+ 
+ libgnome_panel_la_SOURCES = \
+ 	gp-applet.c \
+@@ -30,6 +30,7 @@ libgnome_panel_la_CFLAGS = \
+ 	$(NULL)
+ 
+ libgnome_panel_la_LDFLAGS = \
++	-avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-panel-3.24.1/libpanel-applet/panel-applet.c	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/libpanel-applet/panel-applet.c	2017-09-04 21:31:32.555452600 -0500
+@@ -1622,7 +1622,7 @@ panel_applet_get_object_path (PanelApple
+ 	return applet->priv->object_path;
+ }
+ 
+-G_MODULE_EXPORT GtkWidget *
++GtkWidget *
+ panel_applet_get_applet_widget (const gchar *factory_id,
+                                 guint        uid)
+ {
+--- origsrc/gnome-panel-3.24.1/modules/external/clock/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/external/clock/Makefile.am	2017-09-04 21:32:40.633798300 -0500
+@@ -66,7 +66,7 @@ clock_la_LIBADD = \
+ 	$(NULL)
+ 
+ clock_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-panel-3.24.1/modules/external/fish/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/external/fish/Makefile.am	2017-09-04 21:32:46.102571800 -0500
+@@ -31,7 +31,7 @@ fish_la_LIBADD = \
+ 	$(NULL)
+ 
+ fish_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-panel-3.24.1/modules/external/notification-area/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/external/notification-area/Makefile.am	2017-09-04 21:32:50.071335300 -0500
+@@ -38,7 +38,7 @@ notification_area_la_LIBADD = \
+ 	$(NULL)
+ 
+ notification_area_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-panel-3.24.1/modules/external/status-notifier/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/external/status-notifier/Makefile.am	2017-09-04 21:32:53.993218600 -0500
+@@ -47,7 +47,7 @@ status_notifier_la_LIBADD = \
+ 	$(NULL)
+ 
+ status_notifier_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-panel-3.24.1/modules/external/wncklet/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/external/wncklet/Makefile.am	2017-09-04 21:28:34.005974800 -0500
+@@ -39,7 +39,7 @@ wncklet_la_LIBADD = \
+ 	$(NULL)
+ 
+ wncklet_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
