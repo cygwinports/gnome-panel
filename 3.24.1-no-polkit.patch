@@ -8,8 +8,8 @@
  ])
  
  # Check whether to enable e-d-s support for clock applet
---- origsrc/gnome-panel-3.24.1/modules/external/clock/set-timezone.c	2017-01-24 09:05:03.000000000 -0600
-+++ src/gnome-panel-3.24.1/modules/external/clock/set-timezone.c	2017-09-04 21:26:32.650550400 -0500
+--- origsrc/gnome-panel-3.24.1/modules/clock/set-timezone.c	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/clock/set-timezone.c	2017-09-04 21:26:32.650550400 -0500
 @@ -22,7 +22,9 @@
  #endif
  

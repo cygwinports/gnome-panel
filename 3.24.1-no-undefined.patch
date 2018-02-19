@@ -27,8 +27,8 @@
  panel_applet_get_applet_widget (const gchar *factory_id,
                                  guint        uid)
  {
---- origsrc/gnome-panel-3.24.1/modules/external/clock/Makefile.am	2017-01-24 09:05:03.000000000 -0600
-+++ src/gnome-panel-3.24.1/modules/external/clock/Makefile.am	2017-09-04 21:32:40.633798300 -0500
+--- origsrc/gnome-panel-3.24.1/modules/clock/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/clock/Makefile.am	2017-09-04 21:32:40.633798300 -0500
 @@ -66,7 +66,7 @@ clock_la_LIBADD = \
  	$(NULL)
  
@@ -38,8 +38,8 @@
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
  	$(NULL)
---- origsrc/gnome-panel-3.24.1/modules/external/fish/Makefile.am	2017-01-24 09:05:03.000000000 -0600
-+++ src/gnome-panel-3.24.1/modules/external/fish/Makefile.am	2017-09-04 21:32:46.102571800 -0500
+--- origsrc/gnome-panel-3.24.1/modules/fish/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/fish/Makefile.am	2017-09-04 21:32:46.102571800 -0500
 @@ -31,7 +31,7 @@ fish_la_LIBADD = \
  	$(NULL)
  
@@ -49,8 +49,8 @@
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
  	$(NULL)
---- origsrc/gnome-panel-3.24.1/modules/external/notification-area/Makefile.am	2017-01-24 09:05:03.000000000 -0600
-+++ src/gnome-panel-3.24.1/modules/external/notification-area/Makefile.am	2017-09-04 21:32:50.071335300 -0500
+--- origsrc/gnome-panel-3.24.1/modules/notification-area/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/notification-area/Makefile.am	2017-09-04 21:32:50.071335300 -0500
 @@ -38,7 +38,7 @@ notification_area_la_LIBADD = \
  	$(NULL)
  
@@ -60,8 +60,19 @@
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
  	$(NULL)
---- origsrc/gnome-panel-3.24.1/modules/external/status-notifier/Makefile.am	2017-01-24 09:05:03.000000000 -0600
-+++ src/gnome-panel-3.24.1/modules/external/status-notifier/Makefile.am	2017-09-04 21:32:53.993218600 -0500
+--- origsrc/gnome-panel-3.26.0/modules/separator/Makefile.am	2017-08-20 09:41:35.000000000 -0500
++++ src/gnome-panel-3.26.0/modules/separator/Makefile.am	2018-02-14 20:27:51.294790400 -0600
+@@ -31,7 +31,7 @@ separator_la_LIBADD = \
+ 	$(NULL)
+ 
+ separator_la_LDFLAGS = \
+-	-module -avoid-version \
++	-module -avoid-version -no-undefined \
+ 	$(WARN_LDFLAGS) \
+ 	$(AM_LDFLAGS) \
+ 	$(NULL)
+--- origsrc/gnome-panel-3.24.1/modules/status-notifier/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/status-notifier/Makefile.am	2017-09-04 21:32:53.993218600 -0500
 @@ -47,7 +47,7 @@ status_notifier_la_LIBADD = \
  	$(NULL)
  
@@ -71,8 +82,8 @@
  	$(WARN_LDFLAGS) \
  	$(AM_LDFLAGS) \
  	$(NULL)
---- origsrc/gnome-panel-3.24.1/modules/external/wncklet/Makefile.am	2017-01-24 09:05:03.000000000 -0600
-+++ src/gnome-panel-3.24.1/modules/external/wncklet/Makefile.am	2017-09-04 21:28:34.005974800 -0500
+--- origsrc/gnome-panel-3.24.1/modules/wncklet/Makefile.am	2017-01-24 09:05:03.000000000 -0600
++++ src/gnome-panel-3.24.1/modules/wncklet/Makefile.am	2017-09-04 21:28:34.005974800 -0500
 @@ -39,7 +39,7 @@ wncklet_la_LIBADD = \
  	$(NULL)
  
